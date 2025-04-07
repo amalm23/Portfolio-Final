@@ -78,6 +78,79 @@ nav {
     height: 200px;
   }
 
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .skill {
+    background-color: #fff0fb;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    padding: 10px;
+    overflow: hidden;
+  }
+  .skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  .skill-title {
+    font-size: 2rem;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .skill[open] summary {
+    color: darkblue;
+  }
+  .skill[open] p{
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .skill p {
+    display: none;
+    font-size: 0.9rem;
+    color: #444;
+    padding: 0 10px 10px;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from{opacity: 0; transform: translateY(-5px);}
+    to{opacity: 1; transform: translateY(0);}
+  }
+
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+  }
+
+  details p {
+    display: none;
+  }
+
+  i {
+    display: inline;
+  }
+
   ul {
     float: right;
   }
