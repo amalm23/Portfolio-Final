@@ -46,10 +46,38 @@ nav {
     margin-left: 100px;
   }
 
-  projects {
-
+  .project-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
   }
-  
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 20px;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    background-color: #ffeefc;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+  }
+
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-color: #fff0fb;
+  }
+
+  .image-project {
+    width: 200px;
+    height: 200px;
+  }
+
   ul {
     float: right;
   }
