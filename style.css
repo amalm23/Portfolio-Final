@@ -147,9 +147,6 @@ nav {
     display: none;
   }
 
-  i {
-    display: inline;
-  }
 
   ul {
     float: right;
@@ -157,13 +154,13 @@ nav {
   
   li {
     display: inline-block;
-    margin-right: 220px;
+    margin-right: 200px; 
     text-align: center;
     background-color: pink;  
     border-radius: 5px;
   }
   
-  a {
+  .nav-a {
     display: inline-block;
     width: 150px;
     padding: 10px 0;
@@ -179,6 +176,33 @@ nav {
      height: 0;
      clear: both;
   }
+
+  .contact-icon i, .contact-icon:link i, .contact-icon:visited i, .contact-icon:active i {
+    color: plum;
+  }
+
+  .contact-icon i {
+    font-size: 3rem;
+  }
+
+  .contact-container {
+    background-color: #fff0fb;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 200px;
+  }
+  
+
   
   /* @media only screen and (max-width: 800px) {
     h1 {

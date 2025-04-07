@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
       box.addEventListener("toggle", () => {
         // When the box is opened, close all other boxes
         if (box.open) {
-          // Close all other boxes
           skillBoxes.forEach((otherBox) => {
             if (otherBox !== box && otherBox.open) {
               otherBox.removeAttribute("open");
