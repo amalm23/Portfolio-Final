@@ -1,14 +1,53 @@
 nav {
     padding: 25px;
     font-family: 'Roboto', sans-serif;
-    background-color: #F25F5C;
+    background-color: blueviolet;
   }
   
   h1 {
-    float: left;
-    margin-top: 5px;
-    color: white;
+    margin-top: 20px;
     font-size: 36px;
+    text-align: center;
+    border-radius: 5px;
+    border-color: aqua;
+    border-style: dashed;
+    background-color: pink;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    text-align: center;
+    border-radius: 5px;
+    border-color: aqua;
+    border-style: dashed;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: pink;
+  }
+
+  .about-me-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .about-me-text-container {
+    max-width: 70%;
+  }
+
+  .flower {
+    width: 300px;
+    height: 200px;
+    border-radius: var(--border-radius);
+    flex-shrink: 0;
+    margin-left: 100px;
+  }
+
+  projects {
+
   }
   
   ul {
@@ -17,9 +56,9 @@ nav {
   
   li {
     display: inline-block;
-    margin-right: 25px;
+    margin-right: 220px;
     text-align: center;
-    background-color: #28587B;  
+    background-color: pink;  
     border-radius: 5px;
   }
   
@@ -30,7 +69,6 @@ nav {
     text-decoration: none;
     font-size: 24px;
     color: white;
-    text-shadow: 2px 2px 0 #bbbbbb;
   }
   
   .clearfix:after {
@@ -41,7 +79,7 @@ nav {
      clear: both;
   }
   
-  @media only screen and (max-width: 800px) {
+  /* @media only screen and (max-width: 800px) {
     h1 {
       display: none;
     }
@@ -55,4 +93,4 @@ nav {
       padding: 5px 0;
       font-size: 16px;
     }
-  }
+  } */
